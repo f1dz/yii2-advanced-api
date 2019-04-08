@@ -1,6 +1,7 @@
 <?php
 namespace api\modules\v1\models;
 use \yii\db\ActiveRecord;
+use yii\web\Response;
 /**
  * Country Model
  *
@@ -30,7 +31,7 @@ class Country extends ActiveRecord
     public function rules()
     {
         return [
-            [['code', 'name', 'population'], 'required']
+            [['code', 'country', 'population'], 'required']
         ];
     }
 }
